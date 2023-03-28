@@ -1,0 +1,93 @@
+/* App */
+.carousel {
+  width: 100%;
+  margin: 24px auto;;
+  max-width: 400px;
+  min-height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-container {
+  /* carousel */
+  cursor: grab;
+  overflow: hidden;
+}
+
+.carousel-track {
+  /* inner */
+  display: flex;
+}
+
+.carousel-slide {
+  /* item */
+  min-height: 150px;
+  min-width: 300px;
+  padding: 14px;
+}
+
+.carousel-slide img{
+  width: 100%;
+  height: 90%;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: 0;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  opacity: 1;
+}
+
+.carousel-prev {
+  left: 20px;
+}
+
+.carousel-next {
+  right: 20px;
+}
+
+.arrow-button {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.arrow-next {
+  border: solid rgb(255, 0, 0);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow-next {
+  border: solid rgb(255, 0, 0);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  /* transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); */
+}
+.arrow-prev {
+  border: solid rgb(255, 0, 0);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(133deg);
+  -webkit-transform: rotate(133deg);
+}

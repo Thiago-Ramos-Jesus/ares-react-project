@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './Header';
+import Banner1 from './Banner1';
+import Banner2 from './Banner2';
+import Carrossel from './Carrossel';
+import Footer from './Footer';
+import FaqAres from './FaqAres';
+import ModosDeJogo from './ModosJogo';
+import InfoSeguranca from './InfoSeguranca';
+import RegraDeNegocio from './RegraDeNegocio';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="divPaiIndex">
+      <Header />
+      <Banner1 />
+      <Banner2 />
+      <Carrossel />
+      <RegraDeNegocio/>
+      <InfoSeguranca/>
+      <ModosDeJogo/>
+      <FaqAres/>
+      <Footer />
     </div>
+          
   );
 }
 
